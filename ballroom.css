@@ -33,16 +33,45 @@ li {
 	background-color: rgba(255,255,255,.7);
 }
 
-#main {
-	background-image: url('main-background.jpg');
-	background-color: blue;
-
-	width:100%;
+.home-blocks {
+	width: -webkit-calc(100% + 16px);
+	margin-left: -8px;
 	height:500px;
 	position:relative;
 	margin-top:20px;
 	float:center;
+}
+
+#main {
+	background-image: url('main-background.jpg');
+	background-color: blue;
+
 	z-index: -1;
+}
+
+#about {
+	background-color: red;
+}
+
+#sch {
+	background-color: green;
+}
+
+#judges {
+	background-color: black;
+}
+
+#rules {
+	background-color: purple;
+}
+
+#footer-table {
+	width:100%;
+}
+
+#footer-table-logo {
+	padding-left: -webkit-calc(50% - 50px);
+	width: 100px;
 }
 
 .footer-table-td {
