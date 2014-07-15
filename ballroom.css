@@ -1,0 +1,54 @@
+body {
+	font-family: "Ariel";
+}
+#menu {
+	background-color: rgba(255,255,255,.5);
+	width:100%;
+	margin-right:-50px;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	position:relative;
+}
+
+li {
+	list-style-type: none;	
+}
+
+.nav {
+	text-decoration: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 11px;
+	padding-right: 11px;
+	float:left;
+	list-style-type: none;
+	display:inline-block;
+	position: relative;
+	color:black;
+	background-color: rgba(255,255,255,.5);
+	z-index:10;	
+}
+
+.nav:hover {
+	background-color: rgba(255,255,255,.7);
+}
+
+#main {
+	background-image: url('main-background.jpg');
+	background-color: blue;
+
+	width:100%;
+	height:500px;
+	position:relative;
+	margin-top:20px;
+	float:center;
+	z-index: -1;
+}
+
+.footer-table-td {
+	width:33%;
+	background-color: grey;
+	float:center;
+}
+
+/* http://colorschemedesigner.com/csd-3.5/#0h41Ow0w0w0w0*/
