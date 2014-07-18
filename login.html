@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html ng-app>
+    <head>
+        <link href="ballroom.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="user-box">
+            <p>Hello</p>
+            <table id="reg-sign">
+                <tr>
+                    <td class="reg-sign-selector">Register</td>
+                    <td class="reg-sign-selector">Login</td>
+                </tr>
+            </table>
+            <form action="/register" method="post">
+                <div class="form-label">Email</div>
+                <input type="email" name="email" placeholder="user@service.com" class"form-item-input">
+                <div class="form-label">Password </div>
+                <input id="pw" type="password" name="password" placeholder="password" class"form-item-input">
+                <div class="form-label">Confirm Password </div>
+                <input id="passconf" type="password" name="passwordConf" placeholder="confirm password">
+                <input type="submit" value="Register" class="form-submit-button">
+            </form>
+        </div>
+    </body>
+</html>

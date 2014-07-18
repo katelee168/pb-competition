@@ -1,6 +1,8 @@
 body {
 	font-family: "Ariel";
 }
+
+/* Navigation bar */
 #menu {
 	background-color: rgba(255,0,255,.5);
 	width: -webkit-calc(100% + 16px);
@@ -33,6 +35,7 @@ li {
 	background-color: rgba(255,255,255,.7);
 }
 
+/* Home page*/
 .home-blocks {
 	width: -webkit-calc(100% + 16px);
 	margin-left: -8px;
@@ -66,6 +69,7 @@ li {
 	background-color: purple;
 }
 
+/* Footer tags*/
 #footer-table {
 	width:100%;
 }
@@ -79,6 +83,52 @@ li {
 	width:33%;
 	background-color: grey;
 	float:center;
+	height: 100px;
+}
+
+/* Common fields to registration and login*/
+#user-box {
+	background-color: yellow;
+
+	position:relative;
+	margin-left: -25%;
+	top:50%;
+	left:50%;
+	width:50%;
+	padding-top:20px;
+	padding-bottom:20px;
+
+	text-align: center;
+}
+
+#reg-sign {
+	width:100%;
+	height: 50px;
+
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.reg-sign-selector {
+	width:50%;
+	margin:0;
+	background-color: purple;
+}
+
+.form-label {
+	margin:0 0 .3em;
+	display:block;
+	color:#555;
+	font-size: .875em;
+}
+
+.form-item-input {
+	background-color: blue;
+	border:none;
+	line-height:1.3;
+	width:90%;
+	margin-left:5%;
+
 }
 
 /* http://colorschemedesigner.com/csd-3.5/#0h41Ow0w0w0w0*/
