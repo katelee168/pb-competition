@@ -5,6 +5,11 @@ body {
 	text-rendering:optimizeLegibility;
 }
 
+a {
+	text-decoration: none;
+	font-color:black;
+}
+
 /* Navigation bar */
 #menu {
 	width: -webkit-calc(100% + 16px);
@@ -55,14 +60,27 @@ li {
 }
 
 #main {
-	background-image: url('main-background.jpg');
+	/*background-image: url('main-background.jpg');*/
 	background-color: blue;
-
+	height:533px;
+	margin-top: -8px;
 	z-index: -1;
 }
 
+#main-right {
+	margin-left:25%;
+	position:relative;
+	width: 75%;
+
+	height:100px;
+	padding-top:225px;
+	padding-bottom:208px;
+
+	text-align: center;
+}
+
 #about {
-	background-color: red;
+	
 }
 
 #sch {
@@ -122,20 +140,26 @@ li {
 	text-align: center;
 }
 
+/* Selecting login or registration */
 #reg-sign {
 	width:100%;
-	height: 50px;
-
-	padding-top:0px;
-	padding-bottom:0px;
 }
 
 .reg-sign-selector {
 	width:50%;
 	margin:0;
 	background-color: purple;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
+.reg-sign-selector:hover {
+	background-color: rgba(255,255,255,.7);
+}
+
+
+/* Form styling */
 input {
 	padding: 10px;
 	width: 100%;
@@ -145,13 +169,11 @@ input {
 	margin-top: 10px;
 }
 
-input [type=submit] {
-	border-width: 2px;
-	border-color: red;
+input[type=submit] {
+	background-color: red;
 }
 
-#submit {
-	border-width: 2px;
-	border-color: red;
+input[type=submit]:hover {
+	background-color: rgba(255,255,255,.7);
 }
 /* http://colorschemedesigner.com/csd-3.5/#0h41Ow0w0w0w0*/
