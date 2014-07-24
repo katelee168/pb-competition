@@ -2,25 +2,25 @@
 <html ng-app>
     <head>
         <link href="ballroom.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="user-box">
-            <p>Hello</p>
-            <table id="reg-sign">
-                <tr>
-                    <td class="reg-sign-selector">Register</td>
-                    <td class="reg-sign-selector">Login</td>
-                </tr>
-            </table>
-            <form action="/register" method="post">
-                <div class="form-label">Email</div>
-                <input type="email" name="email" placeholder="user@service.com" class"form-item-input">
-                <div class="form-label">Password </div>
-                <input id="pw" type="password" name="password" placeholder="password" class"form-item-input">
-                <div class="form-label">Confirm Password </div>
-                <input id="passconf" type="password" name="passwordConf" placeholder="confirm password">
-                <input type="submit" value="Register" class="form-submit-button">
-            </form>
+            <div id="user-box-in">
+                <p>Hello</p>
+                <table id="reg-sign">
+                    <tr>
+                        <td class="reg-sign-selector">Register</td>
+                        <td class="reg-sign-selector">Login</td>
+                    </tr>
+                </table>
+                <form action="/register.html" method="post">
+                    <input type="email" name="email" placeholder="email">
+                    <input id="pw" type="password" name="password" placeholder="password">
+                    <input id="passconf" type="confirm password" name="passwordConf" placeholder="confirm password">
+                    <input type="submit" value="register" id="submit">
+                </form>
+            </div>
         </div>
     </body>
 </html>
