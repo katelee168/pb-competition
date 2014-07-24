@@ -10,15 +10,15 @@
                 <p>Hello</p>
                 <table id="reg-sign">
                     <tr>
-                        <td class="reg-sign-selector" onclick="window.location.href='register.html'">Register</td>
-                        <td class="reg-sign-selector">Login</td>
+                        <td class="reg-sign-selector">Register</td>
+                        <td class="reg-sign-selector" onclick="window.location.href='login.html'">Login</td>
                     </tr>
                 </table>
                 <form action="/register.html" method="post">
                     <input type="email" name="email" placeholder="email">
                     <input id="pw" type="password" name="password" placeholder="password">
+                    <input id="passconf" type="confirm password" name="passwordConf" placeholder="confirm password">
                     <input type="submit" value="register" id="submit">
-                    <a href="forgot.html">Forgot password</a>
                 </form>
             </div>
         </div>
