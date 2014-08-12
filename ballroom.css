@@ -200,13 +200,28 @@ input {
 }
 
 #submit {
-	background-color: red;
+	background-color: #FF6200;
 	width:150px;
-	text-align: center;
+	border-radius: 2px;
 	margin-left:-webkit-calc(50% - 75px);
+
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
 }
 
 #submit:hover {
 	background-color: rgba(255,255,255,.7);
 }
-/* http://colorschemedesigner.com/csd-3.5/#0h41Ow0w0w0w0*/
+
+span { 
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 5;
+}   
+/* http://colorschemedesigner.com/csd-3.5/#0n31Ow0w0w0w0*/
