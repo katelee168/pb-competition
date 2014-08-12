@@ -10,6 +10,10 @@ a {
 	font-color:black;
 }
 
+h1 {
+	font-size:1.5em;
+}
+
 /* Navigation bar */
 #menu {
 	width: -webkit-calc(100% + 16px);
@@ -60,12 +64,17 @@ li {
 	float:center;
 }
 
+.center-text {
+	text-align: center;
+}
+
 #main {
 	/*background-image: url('main-background.jpg');*/
-	background-color: grey;
+	background-color: #437DD4;
 	height:533px;
 	margin-top: -8px;
 	z-index: -1;
+	color: white;
 }
 
 #main-right {
@@ -74,10 +83,16 @@ li {
 	width: 75%;
 
 	height:100px;
-	padding-top:225px;
+	padding-top:150px;
 	padding-bottom:208px;
 
 	text-align: center;
+}
+
+#main-logo {
+	text-align: center;
+	width: 240px;
+	margin-left:-webkit-calc(50% - 120px);
 }
 
 #about {
@@ -94,6 +109,20 @@ li {
 
 #rules {
 	background-color: purple;
+}
+
+#directions {
+
+}
+
+#directions-logo {
+	text-align: center;
+	width: 210px;
+	margin-left:-webkit-calc(50% - 105px);
+}
+
+#directions-map {
+	margin-left:-webkit-calc(12.5% + 75px);
 }
 
 /* Footer tags*/
