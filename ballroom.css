@@ -20,6 +20,7 @@ a {
 	position:fixed;
 	z-index: 10;
 	padding-top:0;
+	top: -5px;
 
 	font-size: 14px;
 }
@@ -61,7 +62,7 @@ li {
 
 #main {
 	/*background-image: url('main-background.jpg');*/
-	background-color: blue;
+	background-color: grey;
 	height:533px;
 	margin-top: -8px;
 	z-index: -1;
@@ -169,11 +170,14 @@ input {
 	margin-top: 10px;
 }
 
-input[type=submit] {
+#submit {
 	background-color: red;
+	width:150px;
+	text-align: center;
+	margin-left:-webkit-calc(50% - 75px);
 }
 
-input[type=submit]:hover {
+#submit:hover {
 	background-color: rgba(255,255,255,.7);
 }
 /* http://colorschemedesigner.com/csd-3.5/#0h41Ow0w0w0w0*/
