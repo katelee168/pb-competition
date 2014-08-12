@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265.21">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Monaco; min-height: 16.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;style type="text/css"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>body {<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 80%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ul#tabs {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>list-style-type: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 30px 0 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0 0 0.3em 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ul#tabs li {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: inline;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ul#tabs li a {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 110%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #ff702b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: 1px solid #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border-bottom: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0.3em 1em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0 -0.39em 0 0;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-decoration: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ul#tabs li a:hover {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: #ff702b;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>ul#tabs li a.selected {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: #ff702b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-weight: normal;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0.3em 1em 0.38em 1em;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>div.tabContent {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: #ff702b;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: 1px solid #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background-color: #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>div.tabContent.hide {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: none;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-weight: normal;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>line-height: 30%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 121%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0.5em 0;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>table {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: none;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 80%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.events {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #ff702b;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>h1 {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: normal;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #263e6e;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>strong {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-weight: normal;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #ff702b;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 0.3em 0.45em;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script type="text/javascript"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>//&lt;![CDATA[</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>var tabLinks = new Array();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>var contentDivs = new Array();</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function init() {</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Grab the tab links and content divs from the page</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var tabListItems = document.getElementById('tabs').childNodes;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for ( var i = 0; i &lt; tabListItems.length; i++ ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if ( tabListItems[i].nodeName == "LI" ) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );</p>
+<p class="p1"><span class="Apple-converted-space">          </span>var id = getHash( tabLink.getAttribute('href') );</p>
+<p class="p1"><span class="Apple-converted-space">          </span>tabLinks[id] = tabLink;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>contentDivs[id] = document.getElementById( id );</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Assign onclick events to the tab links, and</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// highlight the first tab</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var i = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>for ( var id in tabLinks ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tabLinks[id].onclick = showTab;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tabLinks[id].onfocus = function() { this.blur() };</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if ( i == 0 ) tabLinks[id].className = 'selected';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>i++;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Hide all content divs except the first</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var i = 0;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>for ( var id in contentDivs ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if ( i != 0 ) contentDivs[id].className = 'tabContent hide';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>i++;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function showTab() {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var selectedId = getHash( this.getAttribute('href') );</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Highlight the selected tab, and dim all others.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Also show the selected content div, and hide all others.</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for ( var id in contentDivs ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if ( id == selectedId ) {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>tabLinks[id].className = 'selected';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>contentDivs[id].className = 'tabContent';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
+<p class="p1"><span class="Apple-converted-space">          </span>tabLinks[id].className = '';</p>
+<p class="p1"><span class="Apple-converted-space">          </span>contentDivs[id].className = 'tabContent hide';</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>// Stop the browser following the link</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return false;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function getFirstChildWithTagName( element, tagName ) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>for ( var i = 0; i &lt; element.childNodes.length; i++ ) {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>function getHash( url ) {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>var hashPos = url.lastIndexOf ( '#' );</p>
+<p class="p1"><span class="Apple-converted-space">      </span>return url.substring( hashPos + 1 );</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>//]]&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;body onload="init()"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Rules&lt;/h1&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;strong&gt;Current Pricing&lt;/strong&gt;<span class="Apple-converted-space"> </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>Early bird: Student (40) Adult (50)</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;br&gt;&lt;br&gt;&lt;br&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Sep 21 - Oct 11&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Regular:&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Student (45)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Adult (55)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Oct 12 - Oct 17&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Late:&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Student (50)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;td&gt;Adult (60)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/table&gt;</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;ul id="tabs"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#reg"&gt;Registration&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#elig"&gt;Eligibility&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;li&gt;&lt;a href="#syll"&gt;Syllabi &amp; Costumes&lt;/a&gt;&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/ul&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tabContent" id="reg"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Registration&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Student: Any full-time high school, undergraduate, or graduate student&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Adult: Any non-student amateur&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Double registration in two consecutive levels is allowed in silver and above. A single couple can register in silver and gold, but not in silver and bronze. Champion couples can only register for free if they only dance in Champion level.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Multi-level couples must dance at the level of the more advanced partner.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;A dancer may register for bronze and silver only if he/she dances with different partners and neither of these partners is double-registered.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Same-sex partnerships are allowed.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;There are no restrictions on age or affiliation. Youth, adult, and non-collegiate competitors are welcome.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;All dancers must register for at least one event.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Checks should be made out to Princeton University with 'Princeton Ballroom Dance Club' on the memo line.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Dancers will be charged based on the date of the latest edit to their registration information. (Example: If I register early for Bronze Smooth events, but decide to add Bronze Standard events to my registration during normal registration period, the overall fee will correspond to normal registration).&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Dropping all events from a registration constitutes a cancellation of the registration.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;li&gt;Refunds will be determined according to the following:&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Before Oct 11: 100%&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Before Oct 17: 50%&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;After Oct 17 or no shows otherwise: 0%&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;li&gt;Events: The following events are subject to change depending on the number of registrations for each level or event.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;center&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;table class="events"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Events&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Smooth&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Standard&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Rhythm&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Latin&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Newcomer&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W, T, F&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W, T, Q&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C, R, Sw&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C, R, J&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Bronze&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W, T, F, Vw&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W, T, F, Q&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C, R, Sw, M&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C, S, R, J&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Silver&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W/T, F, Vw&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W, T, F, Q&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C/R, Sw/M&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C, S, R, J&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Gold&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W/T, F/Vw&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;W/T, F/Q&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C/R, Sw/M&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;C/R, S/J&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;All&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;-----&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Vw&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;B&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;P&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Pre-champ&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td colspan="4"&gt;W/T/F/Q, Vw, C/R/S/J, P&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Champ&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td colspan="4"&gt;W/T/F/Q, Vw, C/R/S/J, P&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;&lt;b&gt;Open&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td colspan="4"&gt;C/R/Sw/B/M, W/T/F/Vw&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td rowspan="5"&gt;&lt;b&gt;Key&lt;/b&gt;&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Waltz (W)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Quickstep (Q)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Swing (Sw)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Jive (J)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Tango (T)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Cha-cha (C)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Mambo (M)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Paso Doble (P)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Foxtrot (F)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Rumba (R)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Bolero (B)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Viennese Waltz (Vw)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;td&gt;Samba (S)&lt;/td&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/center&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tabContent" id="elig"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Eligibility&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Dancers may compete in newcomer only if they started dancing after August 1st, 2014.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;The accumulation of seven or more points in an event at a particular level according to the YCN point system makes a competitor ineligible to compete in that event/level.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;The YCN points system will be used for all levels. Any dancers disobeying this system can be disqualified, even after the competition.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;br&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Conduct and Liability&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;The organizers have the right to eject anyone from the premises for unruly conduct or for violation of any of the rules or guidelines. Flagrant disregard of any of the rules or regulations will result in a mark down of placement or in a disqualification where necessary.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Princeton University and the Princeton Ballroom Dance Club are not liable for any property lost or damage and injury or other misfortune that occurs during the competition.</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tabContent" id="syll"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;h2&gt;Syllabi &amp; Costumes&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Newcomer and Bronze: ISTD Bronze syllabus for International style, USISTD Bronze syllabus for American style. No continuity footwork.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Silver and Gold: ISTD Silver or Gold syllabus respectively for International style, and USISTD, DVIDA, FADS, AMDS Silver or Gold syllabus respectively or any other major syllabus for American style.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Syllabus Viennese Waltz and Paso Doble: ISTD Gold syllabus and below for International style, and USISTD, DVIDA, FADS, AMDS Gold syllabus and below or any other major syllabus for American style.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Open: Not restricted to syllabus, but no lifts permitted.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Costumes are allowed in Bronze and above.&lt;/li&gt;</p>
+<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+</body>
+</html>
