@@ -65,43 +65,51 @@
                 <br />
                 <small>View <a href="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=101898161101184657193.00048de1233f13276cd20&amp;ll=40.345661,-74.658773&amp;spn=0.003925,0.006866&amp;z=17&amp;source=embed" style="color:#0000FF;text-align:left">Dillon Gym</a> in a larger map</small>
             </div>
+            </div>
             <div id="housing" class="home-blocks">
-                <div id="left">
-                    <?php 
-                      if ($_POST["email"]<>'') { 
-                          $ToEmail = 'cloudsrpretty168@gmail.com'; 
-                          $EmailSubject = $_POST["subject"]; 
-                          $mailheader = "From: ".$_POST["email"]."\r\n"; 
-                          $mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
-                          $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-                          $MESSAGE_BODY = "Name: ".$_POST["name"].""; 
-                          $MESSAGE_BODY .= "Email: ".$_POST["email"].""; 
-                          $MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"]).""; 
-                          mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
-                      ?> 
-                      Your message was sent
-                      <?php 
-                      } else { 
-                      ?> 
-                        <form action="test.php" method="post">
-                          <input name="name" type="text" id="name" placeholder="name">
-                          <input name="email" type="text" id="email" placeholder="email">
-                          <input name="subject" type="text" id="subject" placeholder="subject">
-                          <textarea name="comment" cols="45" rows="6" id="comment" class="bodytext" placeholder="leave us a message!"></textarea>
-                          <input type="submit" name="Submit" value="Send">
-                        </form> 
-                      <?php 
-                      }; 
-                      ?>
-                </div>
-                <div id="right">
-                </div>
+              <div class="center-text">
+                <br/>
+                <br/>
+                <h1>Contact & Housing</h1>
+              </div>
+              <div id="housing-left">
+                  <?php 
+                    if (isset($_POST["email"])) { 
+                        $ToEmail = 'cloudsrpretty168@gmail.com'; 
+                        $EmailSubject = $_POST["subject"]; 
+                        $mailheader = "From: ".$_POST["email"]."\r\n"; 
+                        $mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
+                        $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+                        $MESSAGE_BODY = "Name: ".$_POST["name"].""; 
+                        $MESSAGE_BODY .= "Email: ".$_POST["email"].""; 
+                        $MESSAGE_BODY .= "Comment: ".nl2br($_POST["comment"]).""; 
+                        mail($ToEmail, $EmailSubject, $MESSAGE_BODY, $mailheader) or die ("Failure"); 
+                  ?> 
+                    <div id="form-contact-box">
+                      Thank you for your message! We'll get back to you as fast as we can!
+                    </div>
+                  <?php 
+                    } else { 
+                  ?> 
+                      <form action="index.php" method="post" id="form-contact-box">
+                      <input name="name" type="text" id="name" placeholder="name">
+                      <input name="email" type="text" id="email" placeholder="email">
+                      <input name="subject" type="text" id="subject" placeholder="subject">
+                      <textarea name="comment" cols="45" rows="6" id="comment" class="bodytext" placeholder="leave us a message!"></textarea>
+                      <input type="submit" id="submit" name="Submit" value="Send">
+                    </form> 
+                  <?php 
+                  }; 
+                  ?>
+              </div>
+              <div id="housing-right">
+              </div>
             </div>
         </div>
 
     </body>
     <footer>
-    	<table id="footer-table" class="home-blocks">
+    	<table id="footer-table">
     		<tr>
     			<p id="footer-table-logo">Insert image logo here</p>
     		</tr>
