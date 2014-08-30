@@ -103,6 +103,16 @@
                   ?>
               </div>
               <div id="housing-right">
+                <table>
+                  <tr>
+                    <td><img src="hotel.png" id="housing-pic"></td>
+                    <td><img src="hotel.png" id="housing-pic"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="hotel.png" id="housing-pic"></td>
+                    <td><img src="hotel.png" id="housing-pic"></td>
+                  </tr>
+                </table>
               </div>
             </div>
         </div>

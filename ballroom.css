@@ -122,16 +122,28 @@ li {
 
 #housing {
 	background-color: #679ED2;
+	height: 700px;
 }
 
 #housing-left {
 	width: 50%;
+	display: table-cell;
 }
 
 #housing-right {
 	width:50%;
-	padding-left: 50%;
-	background-color: red;
+	display: table-cell;
+}
+
+#housing-right table {
+	margin-left:120px;	
+}
+
+#housing-right td {
+	margin-left: 50px;
+}
+
+#housing-pic:{
 }
 
 /* Footer tags*/
