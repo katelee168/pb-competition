@@ -73,7 +73,6 @@ li {
 	background-color: #437DD4;
 	height:533px;
 	margin-top: -8px;
-	z-index: -1;
 	color: white;
 }
 
@@ -111,10 +110,6 @@ li {
 	background-color: purple;
 }
 
-#directions {
-
-}
-
 #directions-logo {
 	text-align: center;
 	width: 210px;
@@ -123,6 +118,10 @@ li {
 
 #directions-map {
 	margin-left:-webkit-calc(12.5% + 75px);
+}
+
+#housing {
+
 }
 
 /* Footer tags*/
@@ -201,6 +200,7 @@ input {
 
 #submit {
 	background-color: #FF6200;
+	color:white;
 	width:150px;
 	border-radius: 2px;
 	margin-left:-webkit-calc(50% - 75px);
@@ -213,6 +213,7 @@ input {
 
 #submit:hover {
 	background-color: rgba(255,255,255,.7);
+	color: #437DD4;
 }
 
 span { 
