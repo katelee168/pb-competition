@@ -14,6 +14,15 @@ h1 {
 	font-size:1.5em;
 }
 
+#circle {
+    width: 70px;
+    height: 70px;
+    padding-left: 10px;
+    padding-top: 10px;
+    border-radius: 40px; 
+    background-color: white;
+}
+
 /* Navigation bar */
 #menu {
 	width: -webkit-calc(100% + 16px);
@@ -94,19 +103,32 @@ li {
 	margin-left:-webkit-calc(50% - 120px);
 }
 
-#sch {
-	margin-left: 25%;
+#sch table{
+	width: 350px;
+	margin-left: -webkit-calc(50% - 175px);
+
+	background-color: rgba(67,125,212,.2);
+	border-radius: 5px
 }
 
 #rules {
+	width: -webkit-calc(100% + 16px);
+	margin-left: -8px;
+	position:relative;
+	float:center;
+
 	background-color: #437DD4;
 	color: white;
-	height:765px;
-
-	padding-right: 100px;
-	padding-left: 100px;
+	
 	margin-top: 0px;
 	padding-top: 20px;
+}
+
+#rules-pricing {
+    border: none;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 100%;
 }
 
 #directions-logo {
@@ -116,11 +138,12 @@ li {
 }
 
 #directions-map {
-	margin-left:-webkit-calc(12.5% + 75px);
+	width: -webkit-calc(50% + 32px);
+	margin-left:25%;
 }
 
 #housing {
-	background-color: #679ED2;
+	background-color: #437DD4;
 	height: 700px;
 	color: white;
 }
@@ -281,8 +304,9 @@ span {
 /* Rules from generator */
 ul#tabs {
         list-style-type: none;
-        margin: 30px 0 0 0;
-        padding: 0 0 0.3em 0;
+        /*width: 50%;*/
+		margin-left: 25%;
+		margin-bottom: 6px;
       }
       ul#tabs li {
         display: inline;
@@ -291,8 +315,6 @@ ul#tabs {
         font-size: 110%;
         color: white;
         background-color: #263e6e;
-        border: 1px solid #437DD4;
-        border-bottom: none;
         padding: 0.3em 1em;
         margin: 0 -0.39em 0 0;
         text-decoration: none;
@@ -305,15 +327,16 @@ ul#tabs {
         color: white;
         background-color: #437DD4;
         font-weight: normal;
-        border: 1px solid #263e6e;
-        border-bottom: 1px solid #437DD4;
         padding: 0.3em 1em 0.38em 1em;
       }
       div.tabContent {
-      	width:-webkit-calc(75% - 50px);
-        color: white;
-        border: 1px solid #263e6e;
+      	width: 50%;
+        color: grey;
+        background-color: white;
+
+        border-radius: 	5px;
         padding: 1em;
+        margin-left: 25%;
       }
       div.tabContent.hide {
         display: none;
@@ -325,15 +348,9 @@ ul#tabs {
         margin: 0.5em 0;
       }
   
-  table {
-    border: none;
-    width: 80%;
-    font-size: 100%;
-  }
-  
   strong {
     font-weight: normal;
     background-color: #ff702b;
     color: #fff;
-    padding: 0.3em 0.45em;
+    margin-left: 25%;
   }
