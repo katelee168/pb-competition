@@ -94,20 +94,19 @@ li {
 	margin-left:-webkit-calc(50% - 120px);
 }
 
-#about {
-	
-}
-
 #sch {
-	background-color: green;
-}
-
-#judges {
-	background-color: black;
+	margin-left: 25%;
 }
 
 #rules {
-	background-color: purple;
+	background-color: #437DD4;
+	color: white;
+	height:765px;
+
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-top: 0px;
+	padding-top: 20px;
 }
 
 #directions-logo {
@@ -123,27 +122,40 @@ li {
 #housing {
 	background-color: #679ED2;
 	height: 700px;
+	color: white;
 }
 
 #housing-left {
 	width: 50%;
-	display: table-cell;
-}
-
-#housing-right {
-	width:50%;
-	display: table-cell;
+	vertical-align: top;
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 #housing-right table {
-	margin-left:120px;	
+	padding-left: 20%;
 }
 
-#housing-right td {
-	margin-left: 50px;
+#housing-pic {
+	text-align: center;
+	
+	vertical-align: middle;
+	padding-bottom: 70px;
 }
 
-#housing-pic:{
+#housing-pic-over {
+	visibility: hidden;
+	background-color: white;
+	opacity: .7;
+	text-align: center;
+	color: black;
+
+	vertical-align: middle;
+	margin-top: -90px;
+}
+
+#housing-pic:hover #housing-pic-over {
+	visibility: visible;
 }
 
 /* Footer tags*/
@@ -265,3 +277,63 @@ span {
   z-index: 5;
 }   
 /* http://colorschemedesigner.com/csd-3.5/#0n31Ow0w0w0w0*/
+
+/* Rules from generator */
+ul#tabs {
+        list-style-type: none;
+        margin: 30px 0 0 0;
+        padding: 0 0 0.3em 0;
+      }
+      ul#tabs li {
+        display: inline;
+      }
+      ul#tabs li a {
+        font-size: 110%;
+        color: white;
+        background-color: #263e6e;
+        border: 1px solid #437DD4;
+        border-bottom: none;
+        padding: 0.3em 1em;
+        margin: 0 -0.39em 0 0;
+        text-decoration: none;
+      }
+      ul#tabs li a:hover {
+        background-color: #437DD4;
+        color: white;
+      }
+      ul#tabs li a.selected {
+        color: white;
+        background-color: #437DD4;
+        font-weight: normal;
+        border: 1px solid #263e6e;
+        border-bottom: 1px solid #437DD4;
+        padding: 0.3em 1em 0.38em 1em;
+      }
+      div.tabContent {
+      	width:-webkit-calc(75% - 50px);
+        color: white;
+        border: 1px solid #263e6e;
+        padding: 1em;
+      }
+      div.tabContent.hide {
+        display: none;
+      }
+      h2 {
+        font-weight: normal;
+        line-height: 30%;
+        font-size: 121%;
+        margin: 0.5em 0;
+      }
+  
+  table {
+    border: none;
+    width: 80%;
+    font-size: 100%;
+  }
+  
+  strong {
+    font-weight: normal;
+    background-color: #ff702b;
+    color: #fff;
+    padding: 0.3em 0.45em;
+  }
