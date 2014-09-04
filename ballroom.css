@@ -28,7 +28,7 @@ h1 {
 /* Navigation bar */
 #menu {
 	width: -webkit-calc(100% + 16px);
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(255,255,255,.8);
 	top:5px;
 	margin-right: -20px;
 	margin-left: -8px;
@@ -70,9 +70,11 @@ li {
 .home-blocks {
 	width: -webkit-calc(100% + 16px);
 	margin-left: -8px;
-	height:500px;
 	position:relative;
 	float:center;
+
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .center-text {
@@ -80,11 +82,32 @@ li {
 }
 
 #main {
-	/*background-image: url('main-background.jpg');*/
-	background-color: #437DD4;
 	height:533px;
 	margin-top: -8px;
 	color: white;
+
+	left: 0;
+	right: 0;
+}
+
+#main-background {
+	position: fixed;
+	left: 0;
+	right: 0;
+	height: 533px;
+	margin-top: -8px;
+	z-index: -1;
+
+	display: block;
+	background-color: black;
+	background-image: url('tango-3.jpg');
+	background-repeat: no-repeat;
+
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
 }
 
 #main-right {
@@ -103,6 +126,10 @@ li {
 	text-align: center;
 	width: 240px;
 	margin-left:-webkit-calc(50% - 120px);
+}
+
+#sch {
+	background-color: white;
 }
 
 #sch table{
@@ -131,6 +158,12 @@ li {
     width: 50%;
     margin-left: 25%;
     font-size: 100%;
+    text-align: right;
+}
+
+#directions {
+	background-color: white;
+	padding-bottom: 15px;
 }
 
 #directions-logo {
@@ -146,7 +179,6 @@ li {
 
 #housing {
 	background-color: #437DD4;
-	height: 700px;
 	color: white;
 }
 
@@ -174,6 +206,7 @@ li {
 	opacity: .7;
 	text-align: center;
 	color: black;
+	border-radius: 15px;
 
 	vertical-align: middle;
 	margin-top: -90px;
@@ -184,6 +217,10 @@ li {
 }
 
 /* Footer tags*/
+
+#footer {
+	background-color: #437DD4;
+}
 #footer-table {
 	width:100%;
 	background-color: #437DD4;
@@ -194,10 +231,22 @@ li {
 	width: 100px;
 }
 
-.footer-table-td {
+#footer-table-left {
+	width:-webkit-calc(33% + 8px);
+	float:center;
+	height: 100px;
+	margin-left: -8px;
+
+	color:white;
+}
+
+#footer-table-center {
 	width:33%;
 	float:center;
 	height: 100px;
+
+	text-align: center;
+	color:white;
 }
 
 #footer-table-right {
@@ -363,16 +412,12 @@ ul#tabs {
       div.tabContent.hide {
         display: none;
       }
+      div.tabContent li {
+      	margin-bottom: 10px;
+      }
       h2 {
         font-weight: normal;
         line-height: 30%;
         font-size: 121%;
         margin: 0.5em 0;
       }
-  
-  strong {
-    font-weight: normal;
-    background-color: #ff702b;
-    color: #fff;
-    margin-left: 25%;
-  }
