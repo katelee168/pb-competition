@@ -1,7 +1,9 @@
 pb-competition
 ==============
 
-Princeton Ballroom Competitions site
+Princeton Ballroom Competitions site: 
+
+Latest version: http://www.princeton.edu/~pbdc/pb-competition/index.html
 
 Gitignore:
  - Anything with local in front of it.
