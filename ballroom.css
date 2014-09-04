@@ -14,14 +14,16 @@ h1 {
 	font-size:1.5em;
 }
 
-#circle {
-    /*width: 70px;
+/*#circle {
+    width: 70px;
     height: 70px;
     padding-left: 10px;
     padding-top: 10px;
-    border-radius: 40px; */
+    border-radius: 40px; 
     background-color: black;
-}
+
+    display: inline-block;
+}*/
 
 /* Navigation bar */
 #menu {
@@ -206,8 +208,9 @@ li {
 	color: white;
 }
 
-#footer-table img {
-	height:30px;
+#footer-table a {
+	text-decoration: none;
+	color: white;
 }
 
 /* Common fields to registration and login*/
@@ -316,21 +319,25 @@ span {
 /* Rules */
 ul#tabs {
         list-style-type: none;
-        /*width: 50%;
-		margin-left: 25%;*/
-		margin-bottom: 6px;
+        margin-left: -webkit-calc(50% - 355px);
+		margin-bottom: 15px;
       }
       ul#tabs li {
         display: inline;
       }
       ul#tabs li a {
-      	display:inline;
         font-size: 110%;
         color: white;
         background-color: #263e6e;
-        /*padding: 0.3em 1em;
-        margin: 0 -0.39em 0 0;*/
+
+    	/* to make it circular*/
+    	width:135px;
+	    padding: 10px 10px 10px 10px;
+	    border-radius: 100px; 
+	    display: inline-block;
+
         text-decoration: none;
+        text-align: center;
       }
       ul#tabs li a:hover {
         background-color: #437DD4;
@@ -339,8 +346,10 @@ ul#tabs {
       ul#tabs li a.selected {
         color: white;
         background-color: #437DD4;
-        font-weight: normal;
         /*padding: 0.3em 1em 0.38em 1em;*/
+      }
+      ul#tabs tr {
+      	margin-top: 50px;
       }
       div.tabContent {
       	width: 50%;
