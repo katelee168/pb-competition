@@ -15,12 +15,12 @@ h1 {
 }
 
 #circle {
-    width: 70px;
+    /*width: 70px;
     height: 70px;
     padding-left: 10px;
     padding-top: 10px;
-    border-radius: 40px; 
-    background-color: white;
+    border-radius: 40px; */
+    background-color: black;
 }
 
 /* Navigation bar */
@@ -184,6 +184,7 @@ li {
 /* Footer tags*/
 #footer-table {
 	width:100%;
+	background-color: #437DD4;
 }
 
 #footer-table-logo {
@@ -193,9 +194,20 @@ li {
 
 .footer-table-td {
 	width:33%;
-	background-color: grey;
 	float:center;
 	height: 100px;
+}
+
+#footer-table-right {
+	text-align: right;
+	width:50%;
+	margin-left: 50%;
+
+	color: white;
+}
+
+#footer-table img {
+	height:30px;
 }
 
 /* Common fields to registration and login*/
@@ -301,22 +313,23 @@ span {
 }   
 /* http://colorschemedesigner.com/csd-3.5/#0n31Ow0w0w0w0*/
 
-/* Rules from generator */
+/* Rules */
 ul#tabs {
         list-style-type: none;
-        /*width: 50%;*/
-		margin-left: 25%;
+        /*width: 50%;
+		margin-left: 25%;*/
 		margin-bottom: 6px;
       }
       ul#tabs li {
         display: inline;
       }
       ul#tabs li a {
+      	display:inline;
         font-size: 110%;
         color: white;
         background-color: #263e6e;
-        padding: 0.3em 1em;
-        margin: 0 -0.39em 0 0;
+        /*padding: 0.3em 1em;
+        margin: 0 -0.39em 0 0;*/
         text-decoration: none;
       }
       ul#tabs li a:hover {
@@ -327,14 +340,14 @@ ul#tabs {
         color: white;
         background-color: #437DD4;
         font-weight: normal;
-        padding: 0.3em 1em 0.38em 1em;
+        /*padding: 0.3em 1em 0.38em 1em;*/
       }
       div.tabContent {
       	width: 50%;
         color: grey;
         background-color: white;
 
-        border-radius: 	5px;
+        border-radius: 5px;
         padding: 1em;
         margin-left: 25%;
       }
